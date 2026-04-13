@@ -120,3 +120,161 @@
 
         <div class="callout">
           <div>
+            <h3>Vols una proposta en 24–48h?</h3>
+            <p>Explica’ns què necessites i et preparem una estimació amb fases i terminis.</p>
+          </div>
+          <a class="btn btn--primary" href="#contacte">Contacta’ns</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSALTRES -->
+    <section id="sobre" class="section section--alt" aria-label="Sobre nosaltres">
+      <div class="container about-grid">
+        <div>
+          <header class="section-header">
+            <h2>Sobre nosaltres</h2>
+            <p>Som un equip petit, àgil i orientat a resultats. Treballem amb metodologia clara i comunicació constant.</p>
+          </header>
+
+          <div class="about-points">
+            <div class="about-point">
+              <h3>Claredat</h3>
+              <p>Objectius definits, estructura ordenada i un pla d’acció comprensible.</p>
+            </div>
+            <div class="about-point">
+              <h3>Qualitat</h3>
+              <p>Accessibilitat, rendiment i bones pràctiques per una web que duri.</p>
+            </div>
+            <div class="about-point">
+              <h3>Proximitat</h3>
+              <p>Resposta ràpida i transparència en decisions i canvis.</p>
+            </div>
+          </div>
+
+          <div class="timeline" aria-label="Procés de treball">
+            <div class="step">
+              <span class="step-badge">1</span>
+              <div>
+                <h4>Brief & objectius</h4>
+                <p>Entenem el negoci, el públic i el missatge clau.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-badge">2</span>
+              <div>
+                <h4>Disseny & estructura</h4>
+                <p>Prototip i jerarquia de contingut orientada a conversió.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-badge">3</span>
+              <div>
+                <h4>Implementació</h4>
+                <p>Codi net, responsive i optimitzat, amb revisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="about-media" aria-label="Imatge i testimoni">
+          <img
+            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80"
+            alt="Equip revisant disseny i mètriques"
+            loading="lazy"
+          />
+          <figure class="quote">
+            <blockquote>
+              “En menys d’una setmana vam tenir una web clara, ràpida i amb missatge molt més professional.”
+            </blockquote>
+            <figcaption>— Client/a satisfet/a</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACTE -->
+    <section id="contacte" class="section" aria-label="Contacte">
+      <div class="container contact-grid">
+        <header class="section-header">
+          <h2>Contacte</h2>
+          <p>Parlem del teu projecte. Responem habitualment en 24–48 hores laborables.</p>
+        </header>
+
+        <div class="contact-panels">
+          <div class="panel">
+            <h3>Dades</h3>
+            <ul class="contact-list">
+              <li><span aria-hidden="true">📍</span> Barcelona / Maresme</li>
+              <li><span aria-hidden="true">✉️</span> <a href="mailto:hello@nexastudio.example">hello@nexastudio.example</a></li>
+              <li><span aria-hidden="true">📞</span> <a href="tel:+34000000000">+34 000 000 000</a></li>
+            </ul>
+
+            <div class="mini-faq" aria-label="Preguntes freqüents">
+              <h4>FAQ ràpida</h4>
+              <details>
+                <summary>Què inclou una web corporativa?</summary>
+                <p>Estructura, disseny, implementació responsive i optimització bàsica (SEO tècnic i rendiment).</p>
+              </details>
+              <details>
+                <summary>Quant triga?</summary>
+                <p>Depèn de l’abast: una web base pot estar llesta en 1–2 setmanes.</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="panel panel--form">
+            <h3>Formulari de contacte</h3>
+
+            <form id="contactForm" class="form" novalidate>
+              <div class="field">
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="El teu nom" />
+                <p class="field-hint" id="nameHint">Mínim 2 caràcters.</p>
+              </div>
+
+              <div class="field">
+                <label for="email">Correu electrònic</label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="nom@exemple.com" />
+                <p class="field-hint" id="emailHint">Farem servir aquest correu per respondre’t.</p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Telèfon de contacte</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+34 600 000 000" />
+                <p class="field-hint" id="phoneHint">Opcional, però útil per trucar-te.</p>
+              </div>
+
+              <div class="field">
+                <label for="message">Missatge</label>
+                <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Explica'ns breument què necessites..."></textarea>
+                <p class="field-hint" id="messageHint">Mínim 10 caràcters.</p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn--primary" type="submit">Enviar</button>
+                <button class="btn btn--ghost" type="reset">Netejar</button>
+              </div>
+
+              <p class="form-note">
+                <small>* Aquest formulari és de demostració: no envia les dades a cap servidor.</small>
+              </p>
+
+              <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Peu de pàgina">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> NexaStudio. Tots els drets reservats.</p>
+      <a class="back-to-top" href="#top">Tornar amunt ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
