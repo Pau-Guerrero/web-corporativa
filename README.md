@@ -1,20 +1,28 @@
+# Web Corporativa de NovaTech Solutions
 
-# Web Corporativa de [Nom de l'Empresa]
-
-Aquesta és la web corporativa de [Nom de l'Empresa], una empresa fictícia dedicada a [descripció breu de l'empresa] dins el mòdul *Projecte Intermodular*.
+Aquesta és la web corporativa de **NovaTech Solutions**, una empresa fictícia dedicada al desenvolupament de solucions digitals innovadores per a empreses, incloent disseny web, consultoria tecnològica i transformació digital.  
+Aquest projecte s’ha realitzat dins el mòdul *Projecte Intermodular*.
 
 ## Demostració
 
-[🌐 URL de la web](https://[usuari].github.io/[nom-del-repositori])
+🌐 https://pau-guerrero.github.io/web-corporativa/
 
 ## Tecnologies Utilitzades
 
-Per la creació d'aquesta web, s'han utilitzat les següents tecnologies i eines:
+Per a la creació d’aquesta web s’han utilitzat les següents tecnologies i eines:
 
-- Indiqueu l'eina IA que heu utilitat.
-- HTML5/CSS3
-- Statcounter per l'analítica
+- **Microsoft Copilot (IA)** per suport en la generació de continguts i estructuració
+- **HTML5** per a l’estructura del lloc web
+- **CSS3** per al disseny i estils visuals
+- **Statcounter** per a l’analítica i seguiment de visites
+
+## Funcionalitats
+
+- Web informativa i corporativa
+- Disseny responsive
+- Navegació clara i senzilla
+- Integració d’analítica web
 
 ## Autor
 
-👤 [El teu nom]
+👤 **Pau Guerrero Bossy**
