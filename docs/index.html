@@ -3,438 +3,120 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="GX Studios: disseny i desenvolupament de producte digital. Webs corporatives, e-commerce, UX/UI i branding. Demana pressupost." />
-  <title>GX Studios — Producte digital, web i disseny</title>
+  <meta name="description" content="Web corporativa moderna: serveis, equip i contacte. Disseny responsive i accessible." />
+  <title>NexaStudio — Solucions digitals per fer créixer el teu negoci</title>
 
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="images/logo-gx.svg" type="image/svg+xml">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
 </head>
 
 <body>
-  <a class="skip-link" href="#inici">Salta al contingut principal</a>
+  <a class="skip-link" href="#main">Saltar al contingut principal</a>
 
-  <header class="site-header">
+  <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#inici" aria-label="GX Studios, anar a l'inici">
-        <img src="images/logo-gx.svg" width="36" height="36" alt="Logotip de GX Studios" class="brand-logo" />
-        <span class="brand-name">GX Studios</span>
+      <a class="brand" href="#top" aria-label="Anar a l'inici">
+        <img class="brand-logo" src="images/logo.svg" alt="Logotip NexaStudio" width="36" height="36" />
+        <span class="brand-name">NexaStudio</span>
       </a>
 
       <nav class="site-nav" aria-label="Navegació principal">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-          <span class="nav-toggle__bar" aria-hidden="true"></span>
-          <span class="nav-toggle__bar" aria-hidden="true"></span>
-          <span class="nav-toggle__bar" aria-hidden="true"></span>
-          <span class="sr-only">Obre o tanca el menú</span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle__icon" aria-hidden="true"></span>
+          <span class="sr-only">Obrir menú</span>
         </button>
 
-        <ul id="nav-menu" class="nav-menu">
-          <li><a href="#inici">Inici</a></li>
-          <li><a href="#serveis">Serveis</a></li>
-          <li><a href="#sobre">Sobre nosaltres</a></li>
-          <li><a href="#contacte" class="nav-cta">Contacte</a></li>
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link" href="#inici">Inici</a></li>
+          <li><a class="nav-link" href="#serveis">Serveis</a></li>
+          <li><a class="nav-link" href="#sobre">Sobre nosaltres</a></li>
+          <li><a class="nav-link" href="#contacte">Contacte</a></li>
         </ul>
       </nav>
+
+      <a class="btn btn--primary header-cta" href="#contacte">Demana informació</a>
     </div>
   </header>
 
-  <main id="inici" class="site-main">
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
+  <main id="main">
+    <!-- INICI -->
+    <section id="inici" class="section hero" aria-label="Inici">
       <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Estudi de producte digital</p>
-          <h1 id="hero-title">Dissenyem i construïm experiències web que converteixen.</h1>
+        <div class="hero-copy">
+          <p class="eyebrow">Solucions digitals • Web • Branding • Automatització</p>
+          <h1>Fem que la teva presència online sigui <span class="accent">clara</span>, <span class="accent">ràpida</span> i <span class="accent">efectiva</span>.</h1>
           <p class="lead">
-            A <strong>GX Studios</strong> transformem idees en webs corporatives, e-commerce i productes digitals
-            amb una experiència d’usuari impecable i una base tècnica sòlida.
+            A NexaStudio ajudem empreses i professionals a convertir visites en clients amb webs modernes, disseny cuidat i experiències optimitzades.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contacte">Demana una proposta</a>
-            <a class="btn btn-secondary" href="#serveis">Veure serveis</a>
+            <a class="btn btn--primary" href="#serveis">Veure serveis</a>
+            <a class="btn btn--ghost" href="#sobre">Coneix l’equip</a>
           </div>
 
-          <dl class="hero-metrics" aria-label="Indicadors clau">
-            <div class="metric">
-              <dt>Temps d’entrega</dt>
-              <dd>2–6 setmanes</dd>
-            </div>
-            <div class="metric">
-              <dt>Focalització</dt>
-              <dd>UX + rendiment</dd>
-            </div>
-            <div class="metric">
-              <dt>Enfoc</dt>
-              <dd>Orientat a negoci</dd>
-            </div>
-          </dl>
+          <ul class="hero-stats" aria-label="Indicadors clau">
+            <li><strong>+120</strong><span>projectes lliurats</span></li>
+            <li><strong>48h</strong><span>primer prototip</span></li>
+            <li><strong>4.9/5</strong><span>satisfacció</span></li>
+          </ul>
         </div>
 
-        <div class="hero-media" aria-hidden="true">
+        <div class="hero-media" aria-label="Imatge destacada">
           <img
-            class="hero-img"
-            src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=70"
-            alt=""
+            src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1400&q=80"
+            alt="Persones treballant en una estratègia digital"
             loading="lazy"
           />
-          <div class="hero-card">
-            <p class="hero-card__title">Resultats mesurables</p>
-            <p class="hero-card__text">Millorem la velocitat, la claredat del missatge i la conversió amb iteracions ràpides.</p>
+          <div class="hero-card" role="note" aria-label="Punt diferencial">
+            <p><strong>Resultats mesurables</strong></p>
+            <p>SEO tècnic, rendiment i accessibilitat des del primer dia.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="serveis" class="section" aria-labelledby="serveis-title">
+    <!-- SERVEIS -->
+    <section id="serveis" class="section" aria-label="Serveis">
       <div class="container">
         <header class="section-header">
-          <h2 id="serveis-title">Serveis</h2>
-          <p class="section-subtitle">
-            Solucions completes per llançar, optimitzar i escalar la teva presència digital.
-          </p>
+          <h2>Serveis</h2>
+          <p>Paquets flexibles per adaptar-nos al teu objectiu, pressupost i ritme.</p>
         </header>
 
         <div class="cards">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">🌐</div>
             <h3>Web corporativa</h3>
-            <p>
-              Disseny i desenvolupament de webs ràpides i clares, preparades per captar leads:
-              missatge, estructura, SEO bàsic i analítica.
-            </p>
+            <p>Landing o web multipàgina amb disseny modern, textos orientats a conversió i estructura SEO.</p>
             <ul class="checklist">
-              <li>Arquitectura de continguts</li>
-              <li>Responsive mobile-first</li>
-              <li>Optimització de rendiment</li>
+              <li>Responsive (mòbil primer)</li>
+              <li>Arquitectura clara</li>
+              <li>Velocitat optimitzada</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>UX/UI i prototipat</h3>
-            <p>
-              Prototips d’alta fidelitat i sistemes de components per validar amb usuaris i reduir riscos abans de construir.
-            </p>
-            <ul class="checklist">
-              <li>Wireframes i prototips</li>
-              <li>Disseny de components</li>
-              <li>Testos i iteració</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>E-commerce & conversió</h3>
-            <p>
-              Botigues online amb fluxos de compra senzills i enfoc en conversió: fitxes de producte, pagament i confiança.
-            </p>
-            <ul class="checklist">
-              <li>Optimització del checkout</li>
-              <li>Copy orientat a venda</li>
-              <li>Mesura de conversions</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Branding digital</h3>
-            <p>
-              Identitat visual coherent i aplicable: paleta, tipografia, guies d’ús i adaptació a entorns digitals.
-            </p>
+            <div class="card-icon" aria-hidden="true">🎨</div>
+            <h3>Branding & UI</h3>
+            <p>Identitat visual coherent: logotip, paleta, tipografia i components per mantenir consistència.</p>
             <ul class="checklist">
               <li>Guia d’estil</li>
-              <li>Design tokens</li>
-              <li>Aplicació a web</li>
+              <li>Disseny de seccions</li>
+              <li>Prototipat ràpid</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Manteniment i evolució</h3>
-            <p>
-              Millores contínues: actualitzacions, continguts, performance, accessibilitat i noves seccions segons objectius.
-            </p>
+            <div class="card-icon" aria-hidden="true">⚙️</div>
+            <h3>Automatitzacions</h3>
+            <p>Processos més àgils amb integracions i fluxos simples (formularis, CRM, email, analítica).</p>
             <ul class="checklist">
-              <li>Auditories periòdiques</li>
-              <li>Backlog d’optimitzacions</li>
-              <li>Suport continu</li>
+              <li>Fluxos de captació</li>
+              <li>Analítica bàsica</li>
+              <li>Millora contínua</li>
             </ul>
           </article>
-
-          <article class="card featured">
-            <h3>Projecte a mida</h3>
-            <p>
-              Tens un repte específic? Preparem una proposta tècnica i de disseny alineada amb el teu negoci i el teu calendari.
-            </p>
-            <a class="text-link" href="#contacte" aria-label="Anar al formulari de contacte per demanar una proposta">
-              Demana una proposta → 
-            </a>
-          </article>
         </div>
 
-        <div class="section-media">
-          <img
-            class="section-img"
-            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=70"
-            alt="Equip treballant en una taula amb portàtils i documents"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="sobre" class="section section-alt" aria-labelledby="sobre-title">
-      <div class="container about-grid">
-        <div class="about-content">
-          <header class="section-header">
-            <h2 id="sobre-title">Sobre nosaltres</h2>
-            <p class="section-subtitle">
-              Som un estudi petit, àgil i exigent: disseny, tecnologia i negoci en una mateixa taula.
-            </p>
-          </header>
-
-          <p>
-            A GX Studios treballem amb empreses que necessiten una presència digital professional i eficient.
-            No venem “pàgines”: construïm una eina comercial que explica bé què fas, genera confiança i facilita el contacte.
-          </p>
-
-          <p>
-            El nostre procés és transparent: definim objectius, dissenyem una estructura clara, construïm amb bones pràctiques
-            i mesurem l’impacte. Ens agrada la simplicitat ben executada.
-          </p>
-
-          <div class="pill-row" aria-label="Valors i metodologia">
-            <span class="pill">Claredat</span>
-            <span class="pill">Velocitat</span>
-            <span class="pill">Accessibilitat</span>
-            <span class="pill">Qualitat tècnica</span>
-          </div>
-
-          <div class="process">
-            <h3 class="process-title">Com treballem</h3>
-            <ol class="process-steps">
-              <li><strong>Descobriment:</strong> objectius, públic, proposta de valor.</li>
-              <li><strong>Disseny:</strong> estructura, UI i continguts orientats a conversió.</li>
-              <li><strong>Construcció:</strong> desenvolupament, SEO bàsic i rendiment.</li>
-              <li><strong>Llançament:</strong> revisió, analítica i millores post-publicació.</li>
-            </ol>
-          </div>
-        </div>
-
-        <aside class="about-aside" aria-label="Targeta destacada">
-          <div class="aside-card">
-            <h3>Què obtindràs</h3>
-            <ul class="checklist">
-              <li>Un disseny coherent amb la teva marca</li>
-              <li>Un web ràpid, responsive i accessible</li>
-              <li>Textos orientats a captar contactes</li>
-              <li>Una base fàcil d’ampliar</li>
-            </ul>
-
-            <div class="aside-quote" role="note">
-              <p><strong>Consell:</strong> una web efectiva és la que s’entén en 10 segons i guia a una acció clara.</p>
-            </div>
-          </div>
-
-          <img
-            class="about-img"
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=70"
-            alt="Equip en reunió davant d’una pantalla"
-            loading="lazy"
-          />
-        </aside>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contacte" class="section" aria-labelledby="contacte-title">
-      <div class="container contact-grid">
-        <div class="contact-content">
-          <header class="section-header">
-            <h2 id="contacte-title">Contacte</h2>
-            <p class="section-subtitle">
-              Explica’ns què necessites i et respondrem en 24–48 hores laborables.
-            </p>
-          </header>
-
-          <div class="contact-details" aria-label="Dades de contacte">
-            <p><strong>Correu:</strong> <a href="mailto:hello@gxstudios.example">hello@gxstudios.example</a></p>
-            <p><strong>Telèfon:</strong> <a href="tel:+34930000000">+34 930 00 00 00</a></p>
-            <p><strong>Adreça:</strong> Carrer Marina 123, 08013 Barcelona</p>
-          </div>
-
-          <div class="notice" role="note">
-            <p>
-              <strong>IA utilitzada:</strong> continguts i estructura assistits amb <strong>Copilot</strong>.
-              Ajustem el text final segons el teu sector i to de marca.
-            </p>
-          </div>
-        </div>
-
-        <div class="contact-form-wrap">
-          <form id="leadForm" class="form" novalidate>
-            <fieldset>
-              <legend class="sr-only">Formulari de contacte</legend>
-
-              <div class="field">
-                <label for="nom">Nom</label>
-                <input id="nom" name="nom" type="text" autocomplete="name" required
-                       placeholder="El teu nom" />
-                <small class="hint">Camp obligatori.</small>
-              </div>
-
-              <div class="field">
-                <label for="correu">Correu electrònic</label>
-                <input id="correu" name="correu" type="email" autocomplete="email" required
-                       placeholder="nom@empresa.com" />
-                <small class="hint">Farem servir aquest correu per respondre’t.</small>
-              </div>
-
-              <div class="field">
-                <label for="telefon">Telèfon de contacte</label>
-                <input id="telefon" name="telefon" type="tel" autocomplete="tel"
-                       inputmode="tel"
-                       pattern="^[0-9+()\s-]{9,}$"
-                       required
-                       placeholder="+34 600 000 000" />
-                <small class="hint">Admet números, espais i símbols (+ - ( )). Mínim 9 caràcters.</small>
-              </div>
-
-              <div class="field">
-                <label for="missatge">Missatge</label>
-                <textarea id="missatge" name="missatge" rows="5" required
-                          placeholder="Explica breument el projecte, objectius i terminis."></textarea>
-                <small class="hint">Camp obligatori.</small>
-              </div>
-
-              <button class="btn btn-primary btn-block" type="submit">
-                Envia el missatge
-              </button>
-
-              <!-- Àrea accessible per feedback -->
-              <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
-            </fieldset>
-          </form>
-
-          <p class="privacy">
-            En enviar, acceptes que fem servir les teves dades només per respondre aquesta consulta.
-            (Projecte demostratiu: no s’envia a cap servidor.)
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="footer-brand-row">
-          <img src="images/logo-gx.svg" width="28" height="28" alt="" aria-hidden="true" />
-          <span class="footer-title">GX Studios</span>
-        </div>
-        <p class="footer-text">
-          Estudi de disseny i desenvolupament digital. Fem webs que comuniquen millor i converteixen més.
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h3>Contacte</h3>
-        <ul class="footer-links">
-          <li><a href="mailto:hello@gxstudios.example">hello@gxstudios.example</a></li>
-          <li><a href="tel:+34930000000">+34 930 00 00 00</a></li>
-          <li><a href="#contacte">Carrer Marina 123, Barcelona</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Xarxes</h3>
-        <ul class="footer-links">
-          <li><a href="#" aria-label="Enllaç placeholder a LinkedIn">LinkedIn</a></li>
-          <li><a href="#" aria-label="Enllaç placeholder a Instagram">Instagram</a></li>
-          <li><a href="#" aria-label="Enllaç placeholder a X">X</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Navegació</h3>
-        <ul class="footer-links">
-          <li><a href="#inici">Inici</a></li>
-          <li><a href="#serveis">Serveis</a></li>
-          <li><a href="#sobre">Sobre nosaltres</a></li>
-          <li><a href="#contacte">Contacte</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>© <span id="year"></span> GX Studios. Tots els drets reservats. (Empresa fictícia)</p>
-    </div>
-  </footer>
-
-  <script>
-    // JS vanilla, simple i comentat (sense llibreries).
-    // - Menú responsive (toggle)
-    // - Confirmació de formulari amb missatge "Gràcies…"
-    // - Any dinàmic al footer
-
-    (function () {
-      const toggle = document.querySelector(".nav-toggle");
-      const menu = document.getElementById("nav-menu");
-
-      if (toggle && menu) {
-        toggle.addEventListener("click", () => {
-          const isOpen = toggle.getAttribute("aria-expanded") === "true";
-          toggle.setAttribute("aria-expanded", String(!isOpen));
-          menu.classList.toggle("is-open");
-        });
-
-        // Tanca el menú quan es clica un enllaç (millora UX en mòbil)
-        menu.addEventListener("click", (e) => {
-          const target = e.target;
-          if (target && target.tagName === "A") {
-            toggle.setAttribute("aria-expanded", "false");
-            menu.classList.remove("is-open");
-          }
-        });
-      }
-
-      // Any al footer
-      const year = document.getElementById("year");
-      if (year) year.textContent = new Date().getFullYear();
-
-      // Formulari: validació HTML5 + confirmació accessible
-      const form = document.getElementById("leadForm");
-      const status = document.getElementById("formStatus");
-
-      if (form && status) {
-        form.addEventListener("submit", (event) => {
-          event.preventDefault();
-
-          // Forcem validació nativa HTML5
-          if (!form.checkValidity()) {
-            status.textContent = "Revisa els camps marcats: hi ha informació obligatòria o incorrecta.";
-            status.classList.add("is-error");
-
-            // Mostra missatges natius del navegador
-            form.reportValidity();
-            return;
-          }
-
-          // Simulació d'enviament (no hi ha servidor)
-          status.classList.remove("is-error");
-          status.classList.add("is-success");
-          status.textContent = "Gràcies! Hem rebut el teu missatge. Et respondrem en 24–48 hores laborables.";
-
-          // Neteja el formulari
-          form.reset();
-
-          // Porta el focus al missatge per accessibilitat (lectors de pantalla)
-          status.setAttribute("tabindex", "-1");
-          status.focus({ preventScroll: false });
-
-          // Elimina tabindex després
-          window.setTimeout(() => status.removeAttribute("tabindex"), 1000);
-        });
-      }
-    })();
-  </script>
-</body>
-</html>
+        <div class="callout">
+          <div>
