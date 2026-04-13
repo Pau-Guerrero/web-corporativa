@@ -1,288 +1,461 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="FootLogistics: solucions logístiques, emmagatzematge i distribució amb traçabilitat i eficiència." />
-  <title>FootLogistics — Logística eficient per fer arribar el teu negoci més lluny</title>
-
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodLogic — Tecnologia per a l'alimentació</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <a class="skip-link" href="#main">Saltar al contingut principal</a>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="FootLogistics, inici">
-        <img class="brand-logo" src="images/logo.svg" width="36" height="36" alt="Logotip FootLogistics" />
-        <span class="brand-name">FootLogistics</span>
-      </a>
-
-      <nav class="site-nav" aria-label="Navegació principal">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
-          <span class="nav-toggle__icon" aria-hidden="true"></span>
-          <span class="sr-only">Obrir menú</span>
-        </button>
-
-        <ul class="nav-menu" id="navMenu">
-          <li><a class="nav-link" href="#inici">Inici</a></li>
-          <li><a class="nav-link" href="#serveis">Serveis</a></li>
-          <li><a class="nav-link" href="#sobre">Sobre nosaltres</a></li>
-          <li><a class="nav-link" href="#contacte">Contacte</a></li>
-        </ul>
-      </nav>
-
-      <a class="btn btn--primary header-cta" href="#contacte">Demana pressupost</a>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- INICI -->
-    <section id="inici" class="section hero" aria-label="Inici">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Transport • Emmagatzematge • Última milla • Traçabilitat</p>
-
-          <h1>
-            La logística que <span class="accent">arriba a temps</span> i
-            et dona <span class="accent">control</span> en cada enviament.
-          </h1>
-
-          <p class="lead">
-            A <strong>FootLogistics</strong> optimitzem la teva cadena de subministrament amb
-            processos eficients, comunicació clara i seguiment en temps real per reduir costos
-            i millorar la satisfacció del client.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn--primary" href="#serveis">Veure serveis</a>
-            <a class="btn" href="#sobre">Coneix l’equip</a>
-          </div>
-
-          <ul class="hero-stats" aria-label="Indicadors clau">
-            <li><strong>24–72h</strong><span>lliuraments habituals</span></li>
-            <li><strong>99%</strong><span>traçabilitat</span></li>
-            <li><strong>Suport</strong><span>ràpid i proper</span></li>
-          </ul>
+    <!-- ════════════ NAVBAR ════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#inici" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 4 13C4 9.5 6.5 6 11 2c4.5 4 7 7.5 7 11a7 7 0 0 1-7 7z"/>
+                        <path d="M11 20c0-3 1.5-5.5 4-8"/>
+                    </svg>
+                </div>
+                FoodLogic
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#inici" class="nav-link active">Inici</a>
+                <a href="#serveis" class="nav-link">Serveis</a>
+                <a href="#nosaltres" class="nav-link">Sobre nosaltres</a>
+                <a href="#contacte" class="nav-link nav-cta">Contacte</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Obrir menú">
+                <span></span><span></span><span></span>
+            </button>
         </div>
+    </nav>
 
-        <div class="hero-media" aria-label="Imatge destacada">
-          <img
-            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=80"
-            alt="Magatzem modern amb caixes i operacions logístiques"
-            loading="lazy"
-          />
-          <div class="hero-card" role="note" aria-label="Punt diferencial">
-            <p><strong>Traçabilitat i transparència</strong></p>
-            <p>Control d’estoc i estat d’enviaments amb actualitzacions clares.</p>
-          </div>
+    <!-- ════════════ HERO ════════════ -->
+    <section class="hero" id="inici">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1920&q=80" alt="Ingredients frescos" loading="eager">
+            <div class="hero-overlay"></div>
         </div>
-      </div>
-    </section>
-
-    <!-- SERVEIS -->
-    <section id="serveis" class="section" aria-label="Serveis">
-      <div class="container">
-        <header class="section-header">
-          <h2>Serveis</h2>
-          <p>Solucions flexibles perquè la teva mercaderia es mogui de manera segura, ràpida i eficient.</p>
-        </header>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🚚</div>
-            <h3>Transport i distribució</h3>
-            <p>Rutes optimitzades per lliuraments locals i interurbans amb seguiment i incidències controlades.</p>
-            <ul class="checklist">
-              <li>Planificació de rutes</li>
-              <li>Gestió d’incidències</li>
-              <li>Compromís de terminis</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">📦</div>
-            <h3>Emmagatzematge i picking</h3>
-            <p>Organització d’estoc, preparació de comandes i control de qualitat per reduir errors.</p>
-            <ul class="checklist">
-              <li>Control d’estoc</li>
-              <li>Picking & packing</li>
-              <li>Qualitat i etiquetatge</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">📍</div>
-            <h3>Última milla</h3>
-            <p>Lliuraments al client final amb comunicació clara, franges horàries i experiència cuidada.</p>
-            <ul class="checklist">
-              <li>Notificacions</li>
-              <li>Franges de lliurament</li>
-              <li>Prova de lliurament</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="callout">
-          <div>
-            <h3>Vols una proposta en 24–48h?</h3>
-            <p>Explica’ns volum d’enviaments, zones i necessitats. Et retornem una estimació per fases.</p>
-          </div>
-          <a class="btn btn--primary" href="#contacte">Contacta’ns</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE NOSALTRES -->
-    <section id="sobre" class="section section--alt" aria-label="Sobre nosaltres">
-      <div class="container about-grid">
-        <div>
-          <header class="section-header">
-            <h2>Sobre nosaltres</h2>
-            <p>
-              A FootLogistics som un equip orientat a l’operativa: prioritzem l’ordre, la puntualitat i
-              la comunicació perquè tu tinguis control i el teu client rebi el que espera.
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-tag hero-anim">Innovació alimentària</div>
+            <h1 class="hero-title hero-anim">
+                Transformem la <span class="text-accent">cadena alimentària</span> amb tecnologia
+            </h1>
+            <p class="hero-desc hero-anim">
+                Solucions intel·ligents per optimitzar cada etapa del procés alimentari,
+                des de la producció fins al consumidor final.
             </p>
-          </header>
-
-          <div class="about-points">
-            <div class="about-point">
-              <h3>Fiabilitat</h3>
-              <p>Processos estandarditzats i control de qualitat per reduir errors i devolucions.</p>
+            <div class="hero-actions hero-anim">
+                <a href="#contacte" class="btn btn-primary">
+                    Sol·licita demo
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#serveis" class="btn btn-ghost">Descobreix serveis</a>
             </div>
-            <div class="about-point">
-              <h3>Eficiència</h3>
-              <p>Optimització de rutes, temps i espais per minimitzar costos operatius.</p>
+            <div class="hero-metrics hero-anim">
+                <div class="metric">
+                    <div class="metric-value"><span class="counter" data-target="150">0</span>+</div>
+                    <div class="metric-label">Empreses clients</div>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric">
+                    <div class="metric-value"><span class="counter" data-target="40">0</span>%</div>
+                    <div class="metric-label">Reducció de desficiència</div>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric">
+                    <div class="metric-value"><span class="counter" data-target="12">0</span></div>
+                    <div class="metric-label">Països d'operació</div>
+                </div>
             </div>
-            <div class="about-point">
-              <h3>Transparència</h3>
-              <p>Seguiment d’enviaments i comunicació clara davant qualsevol incidència.</p>
-            </div>
-          </div>
-
-          <div class="timeline" aria-label="Procés de treball">
-            <div class="step">
-              <span class="step-badge">1</span>
-              <div>
-                <h4>Diagnosi</h4>
-                <p>Analitzem volums, zones, temps de lliurament i punts crítics.</p>
-              </div>
-            </div>
-            <div class="step">
-              <span class="step-badge">2</span>
-              <div>
-                <h4>Proposta i operativa</h4>
-                <p>Definim el flux: recepció, estoc, preparació i lliurament.</p>
-              </div>
-            </div>
-            <div class="step">
-              <span class="step-badge">3</span>
-              <div>
-                <h4>Seguiment i millora</h4>
-                <p>KPIs bàsics, incidències i iteracions per millorar el servei.</p>
-              </div>
-            </div>
-          </div>
         </div>
-
-        <aside class="about-media" aria-label="Imatge i testimoni">
-          <img
-            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1400&q=80"
-            alt="Repartidor amb paquets i vehicle de distribució"
-            loading="lazy"
-          />
-          <figure class="quote">
-            <blockquote>
-              “Amb FootLogistics hem guanyat control d’estoc i puntualitat: ara el client rep informació clara.”
-            </blockquote>
-            <figcaption>— Client/a (exemple)</figcaption>
-          </figure>
-        </aside>
-      </div>
     </section>
 
-    <!-- CONTACTE -->
-    <section id="contacte" class="section" aria-label="Contacte">
-      <div class="container contact-grid">
-        <header class="section-header">
-          <h2>Contacte</h2>
-          <p>Explica’ns què necessites. Responem habitualment en 24–48 hores laborables.</p>
-        </header>
-
-        <div class="contact-panels">
-          <div class="panel">
-            <h3>Dades</h3>
-            <ul class="contact-list">
-              <li><span aria-hidden="true">📍</span> Barcelona / Maresme</li>
-              <li><span aria-hidden="true">✉️</span> <a href="mailto:hello@footlogistics.example">hello@footlogistics.example</a></li>
-              <li><span aria-hidden="true">📞</span> <a href="tel:+34000000000">+34 000 000 000</a></li>
-            </ul>
-
-            <div class="mini-faq" aria-label="Preguntes freqüents">
-              <h4>FAQ ràpida</h4>
-              <details>
-                <summary>Què inclou el servei?</summary>
-                <p>Transport/distribució, emmagatzematge i última milla segons necessitats i volum.</p>
-              </details>
-              <details>
-                <summary>Treballeu amb empreses petites?</summary>
-                <p>Sí. Ajustem el servei a l’escala del teu negoci amb paquets flexibles.</p>
-              </details>
-            </div>
-          </div>
-
-          <div class="panel panel--form">
-            <h3>Formulari de contacte</h3>
-
-            <form id="contactForm" class="form" novalidate>
-              <div class="field">
-                <label for="name">Nom</label>
-                <input id="name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="El teu nom" />
-                <p class="field-hint" id="nameHint">Mínim 2 caràcters.</p>
-              </div>
-
-              <div class="field">
-                <label for="email">Correu electrònic</label>
-                <input id="email" name="email" type="email" autocomplete="email" required placeholder="nom@exemple.com" />
-                <p class="field-hint" id="emailHint">Farem servir aquest correu per respondre’t.</p>
-              </div>
-
-              <div class="field">
-                <label for="phone">Telèfon de contacte</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+34 600 000 000" />
-                <p class="field-hint" id="phoneHint">Opcional, però útil per trucar-te.</p>
-              </div>
-
-              <div class="field">
-                <label for="message">Missatge</label>
-                <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Volum d’enviaments, zones i necessitats..."></textarea>
-                <p class="field-hint" id="messageHint">Mínim 10 caràcters.</p>
-              </div>
-
-              <div class="form-actions">
-                <button class="btn btn--primary" type="submit">Enviar</button>
-                <button class="btn btn--ghost" type="reset">Netejar</button>
-              </div>
-
-              <p class="form-note">
-                <small>* Aquest formulari és de demostració: no envia les dades a cap servidor.</small>
-              </p>
-
-              <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-            </form>
-          </div>
+    <!-- ════════════ MARQUEE ════════════ -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>TRAÇABILITAT</span><span class="marquee-dot"></span>
+            <span>INNOVACIÓ</span><span class="marquee-dot"></span>
+            <span>ANÀLISI DE DADES</span><span class="marquee-dot"></span>
+            <span>LOGÍSTICA INTEL·LIGENT</span><span class="marquee-dot"></span>
+            <span>SOSTENIBILITAT</span><span class="marquee-dot"></span>
+            <span>BLOCKCHAIN</span><span class="marquee-dot"></span>
+            <span>IOT</span><span class="marquee-dot"></span>
+            <span>INTEL·LIGÈNCIA ARTIFICIAL</span><span class="marquee-dot"></span>
+            <span>TRAÇABILITAT</span><span class="marquee-dot"></span>
+            <span>INNOVACIÓ</span><span class="marquee-dot"></span>
+            <span>ANÀLISI DE DADES</span><span class="marquee-dot"></span>
+            <span>LOGÍSTICA INTEL·LIGENT</span><span class="marquee-dot"></span>
+            <span>SOSTENIBILITAT</span><span class="marquee-dot"></span>
+            <span>BLOCKCHAIN</span><span class="marquee-dot"></span>
+            <span>IOT</span><span class="marquee-dot"></span>
+            <span>INTEL·LIGÈNCIA ARTIFICIAL</span><span class="marquee-dot"></span>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" aria-label="Peu de pàgina">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> FootLogistics. Tots els drets reservats.</p>
-      <a class="back-to-top" href="#top">Tornar amunt ↑</a>
     </div>
-  </footer>
+
+    <!-- ════════════ SERVEIS ════════════ -->
+    <section class="services" id="serveis">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">Serveis</span>
+                <h2 class="section-title reveal reveal-up delay-1">Solucions que fan la diferència</h2>
+                <p class="section-desc reveal reveal-up delay-2">Tres pilars tecnològics per garantir eficiència, seguretat i sostenibilitat en tota la cadena de valor alimentària.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal reveal-up delay-1">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+                    </div>
+                    <h3>Traçabilitat total</h3>
+                    <p>Seguiment en temps real de cada producte des de l'origen fins a la prestatgeria amb tecnologia blockchain i IoT.</p>
+                    <a href="#contacte" class="service-link">
+                        Més informació
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="service-card reveal reveal-up delay-2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                    </div>
+                    <h3>Anàlisi de dades</h3>
+                    <p>Dashboards intel·ligents que converteixen dades operatives en insights accionables per millorar la presa de decisions.</p>
+                    <a href="#contacte" class="service-link">
+                        Més informació
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="service-card reveal reveal-up delay-3">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.29 7 8.71 5 8.71-5"/><path d="M12 22V12"/></svg>
+                    </div>
+                    <h3>Optimització logística</h3>
+                    <p>Algoritmes de ruta optimitzada i gestió d'inventaris predictiva que redueix costos i temps de lliurament.</p>
+                    <a href="#contacte" class="service-link">
+                        Més informació
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ SOBRE NOSALTRES ════════════ -->
+    <section class="about" id="nosaltres">
+        <div class="container about-inner">
+            <div class="about-image reveal reveal-left">
+                <img src="https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=800&q=80" alt="Equip FoodLogic treballant">
+                <div class="about-badge">
+                    <span class="about-badge-number">8+</span>
+                    <span class="about-badge-text">Anys d'experiència<br>en food-tech</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-tag reveal">Sobre nosaltres</span>
+                <h2 class="section-title reveal reveal-up delay-1">On la tecnologia troba l'alimentació</h2>
+                <p class="about-text reveal reveal-up delay-2">
+                    FoodLogic va néixer el 2016 amb una missió clara: eliminar el malbaratament alimentari
+                    mitjançant la tecnologia. Avui, el nostre equip de 45 professionals combina experiència
+                    en el sector alimentari amb coneixements avançats en intel·ligència artificial, anàlisi
+                    de dades i enginyeria de programari.
+                </p>
+                <p class="about-text reveal reveal-up delay-2">
+                    Treballem amb productors, distribuïdors i retailers per crear un ecosistema alimentari
+                    més eficient, transparent i sostenible.
+                </p>
+                <div class="about-features reveal reveal-up delay-3">
+                    <div class="about-feature">
+                        <div class="feature-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        <span>Equip multidisciplinar especialitzat</span>
+                    </div>
+                    <div class="about-feature">
+                        <div class="feature-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        <span>Certificació ISO 22000 i BRC</span>
+                    </div>
+                    <div class="about-feature">
+                        <div class="feature-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        <span>Infraestructura cloud segura (GDPR)</span>
+                    </div>
+                    <div class="about-feature">
+                        <div class="feature-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        <span>Suport tècnic 24/7 en català</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ CONTACTE ════════════ -->
+    <section class="contact" id="contacte">
+        <div class="container contact-inner">
+            <div class="contact-info">
+                <span class="section-tag section-tag-light reveal">Contacte</span>
+                <h2 class="section-title section-title-light reveal reveal-up delay-1">Parlem del teu projecte</h2>
+                <p class="section-desc section-desc-light reveal reveal-up delay-2">
+                    Estem preparats per ajudar-te a transformar la teva operació alimentària.
+                    Omple el formulari i ens posarem en contacte en menys de 24 hores.
+                </p>
+                <div class="contact-cards reveal reveal-up delay-3">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact-card-label">Correu electrònic</div>
+                            <div class="contact-card-value">hola@foodlogic.cat</div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact-card-label">Telèfon</div>
+                            <div class="contact-card-value">+34 93 123 45 67</div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact-card-label">Ubicació</div>
+                            <div class="contact-card-value">Barcelona, Catalunya</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrap reveal reveal-right delay-2">
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="nom">Nom</label>
+                            <input type="text" id="nom" class="form-input" placeholder="El teu nom complet" required>
+                            <span class="form-error">Aquest camp és obligatori</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Correu electrònic</label>
+                            <input type="email" id="email" class="form-input" placeholder="nom@empresa.com" required>
+                            <span class="form-error">Introdueix un correu vàlid</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="telefon">Telèfon de contacte</label>
+                        <input type="tel" id="telefon" class="form-input" placeholder="+34 600 000 000">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="missatge">Missatge</label>
+                        <textarea id="missatge" class="form-textarea" placeholder="Explique'ns en què podem ajudar-te..." rows="5" required></textarea>
+                        <span class="form-error">Aquest camp és obligatori</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Enviar missatge
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <div class="form-success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                    </div>
+                    <h3>Missatge enviat correctament!</h3>
+                    <p>Ens posarem en contacte amb tu el més aviat possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ FOOTER ════════════ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#inici" class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 20A7 7 0 0 1 4 13C4 9.5 6.5 6 11 2c4.5 4 7 7.5 7 11a7 7 0 0 1-7 7z"/>
+                            <path d="M11 20c0-3 1.5-5.5 4-8"/>
+                        </svg>
+                    </div>
+                    FoodLogic
+                </a>
+                <p class="footer-desc">Tecnologia avançada per a una cadena alimentària més eficient, transparent i sostenible.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegació</h4>
+                <a href="#inici">Inici</a>
+                <a href="#serveis">Serveis</a>
+                <a href="#nosaltres">Sobre nosaltres</a>
+                <a href="#contacte">Contacte</a>
+            </div>
+            <div class="footer-links">
+                <h4>Serveis</h4>
+                <a href="#serveis">Traçabilitat</a>
+                <a href="#serveis">Anàlisi de dades</a>
+                <a href="#serveis">Logística</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="#">Política de privacitat</a>
+                <a href="#">Avís legal</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <span>&copy; 2025 FoodLogic. Tots els drets reservats.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ════════════ JAVASCRIPT ════════════ -->
+    <script>
+        // ── Scroll Reveal ──
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // ── Navbar scroll effect ──
+        const navbar = document.getElementById('navbar');
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            navbar.classList.toggle('scrolled', scrollY > 60);
+            lastScroll = scrollY;
+        });
+
+        // ── Active nav link on scroll ──
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active',
+                            link.getAttribute('href') === '#' + entry.target.id);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        sections.forEach(s => sectionObserver.observe(s));
+
+        // ── Mobile menu ──
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinksWrap = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinksWrap.classList.toggle('open');
+        });
+        navLinksWrap.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinksWrap.classList.remove('open');
+            });
+        });
+
+        // ── Counter animation ──
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.dataset.counted) {
+                    entry.target.dataset.counted = 'true';
+                    const target = +entry.target.dataset.target;
+                    const duration = 2000;
+                    const start = performance.now();
+                    const animate = (now) => {
+                        const progress = Math.min((now - start) / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        entry.target.textContent = Math.floor(eased * target);
+                        if (progress < 1) requestAnimationFrame(animate);
+                    };
+                    requestAnimationFrame(animate);
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.counter').forEach(c => counterObserver.observe(c));
+
+        // ── Form validation ──
+        const form = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let valid = true;
+
+            // Reset errors
+            form.querySelectorAll('.form-input, .form-textarea').forEach(input => {
+                input.classList.remove('error');
+            });
+            form.querySelectorAll('.form-error').forEach(err => {
+                err.classList.remove('visible');
+            });
+
+            // Validate nom
+            const nom = form.querySelector('#nom');
+            if (!nom.value.trim()) {
+                setError(nom);
+                valid = false;
+            }
+
+            // Validate email
+            const email = form.querySelector('#email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value.trim())) {
+                setError(email);
+                valid = false;
+            }
+
+            // Validate missatge
+            const missatge = form.querySelector('#missatge');
+            if (!missatge.value.trim()) {
+                setError(missatge);
+                valid = false;
+            }
+
+            if (valid) {
+                form.style.opacity = '0';
+                form.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    form.style.display = 'none';
+                    formSuccess.style.display = 'flex';
+                    requestAnimationFrame(() => {
+                        formSuccess.style.opacity = '1';
+                        formSuccess.style.transform = 'translateY(0)';
+                    });
+                }, 300);
+            }
+        });
+
+        function setError(input) {
+            input.classList.add('error');
+            const error = input.parentElement.querySelector('.form-error');
+            if (error) error.classList.add('visible');
+        }
+
+        // Clear error on input
+        form.querySelectorAll('.form-input, .form-textarea').forEach(input => {
+            input.addEventListener('input', () => {
+                input.classList.remove('error');
+                const error = input.parentElement.querySelector('.form-error');
+                if (error) error.classList.remove('visible');
+            });
+        });
+    </script>
 </body>
 </html>
